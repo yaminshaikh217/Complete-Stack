@@ -1,0 +1,1054 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+/* General Styling******* */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid #f00 !important; */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #160f29;
+  color: #fff;
+  overflow-x: hidden !important;
+}
+
+.images {
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  border: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Navbar****** */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  margin: 0.6rem 0rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo img {
+  width: 12rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav li {
+  font-size: 1.7rem;
+  padding: 1.4rem;
+}
+
+.hamburgerBar {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: #fff;
+}
+
+.closeBtn {
+  display: none;
+}
+
+.nav li:hover a {
+  color: #14f1ef;
+}
+
+/* Section Hero ********** */
+
+.hero {
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.hero .imgDiv {
+  width: 100%;
+}
+
+.hero .imgDiv img {
+  width: 100%;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.redTxt {
+  position: absolute;
+  top: 7vw;
+  left: 4vw;
+  font-family: Playfair Display;
+  width: 77vw;
+}
+
+.redTxt h1 {
+  font-size: 4.6vw;
+  text-shadow: 3px 3px 4px #ff0000;
+}
+
+.redTxt h1 span {
+  font-style: italic;
+}
+
+.redTxt h1 span {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.aquaTxt {
+  position: absolute;
+  bottom: 12rem;
+  right: 5rem;
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.aquaTxt .aqua {
+  color: #14f1ef;
+  display: inline-flex;
+}
+
+.aquaTxt h3 {
+  font-size: 1.8vw;
+  align-self: flex-end;
+}
+
+/* About Section ******** */
+
+.about {
+  width: 100vw;
+  padding: 1rem 25rem;
+  background-color: #160f29;
+}
+
+.about h2 {
+  border-radius: 0rem 2.5rem 0rem 2.5rem;
+  background-color: #14f1ef;
+  color: #160f29;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 1rem 0rem;
+  font-family: Play Fair Display;
+}
+
+.about p {
+  font-size: 2rem;
+}
+
+/* Service Section ************ */
+
+.service {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5rem 0rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.laptopImg img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.right {
+  position: relative;
+  font-size: 2vw;
+  padding: 1.8rem;
+  font-weight: 300;
+}
+
+.serviceList {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.serviceBtn {
+  position: relative;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  width: 18rem;
+  height: 4rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+
+.serviceBtn:hover {
+  color: #14f1ef;
+}
+
+.serviceBtn .fa {
+  position: absolute;
+  top: 20%;
+  right: 0rem;
+  font-size: 2.5rem;
+  transition: all 0.2s linear;
+}
+
+.serviceBtn:hover .fa {
+  right: -1.6rem;
+  top: 20%;
+}
+
+.serviceList:hover {
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    54deg,
+    rgba(237, 9, 121, 0.996078431372549) 0%,
+    #23f1e7 0%,
+    #0075f1 100%
+  );
+  border-image-slice: 1;
+}
+
+.serviceList::before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: -2rem;
+  width: 20px;
+  height: 20px;
+}
+
+.right ul::before {
+  content: " ";
+  background: #d4d9df;
+  position: absolute;
+  left: -1rem;
+  width: 2px;
+  height: 72%;
+}
+
+/*  **********   Work Section ******  */
+
+.work {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3rem;
+  overflow-x: hidden;
+}
+
+.work .clockImg {
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.work .workLeft h1 {
+  color: #14f1ef;
+  font-family: Play fair Display;
+}
+
+.border-left {
+  font-size: 1.5rem;
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    to top,
+    #23f1e7 50%,
+    #0075f1 50%
+  );
+  border-image-slice: 1;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  padding: 0 1rem;
+  width: 35vw;
+  margin: 2rem 0;
+}
+
+.workLeft {
+  padding: 1rem;
+  width: 50vw;
+  padding-left: 10rem;
+}
+
+.workLeft h1 {
+  font-size: 7vw;
+}
+
+.partner {
+  color: #fff;
+  display: flex;
+}
+
+.workLeft .serviceBtn {
+  margin: 2rem 0;
+}
+.clockImg {
+  width: 40vw;
+  margin-left: auto;
+}
+
+.clockImg img {
+  aspect-ratio: 1;
+  width: 90%;
+}
+
+.partner h2 {
+  font-size: 2.9rem;
+  font-weight: 600;
+}
+
+.partner .partnerDiv {
+  margin-right: 3rem;
+  border-right: 2px solid #fff;
+  padding-right: 2rem;
+}
+
+.partner p {
+  font-size: 1.3rem;
+}
+
+/* ******** Section Work 2********* */
+
+.work2 .clockImg {
+  margin-right: auto;
+  margin-left: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.clientBtn .fa {
+  position: absolute;
+  top: 15%;
+  right: 0rem;
+  font-size: 2.5rem;
+  transition: all 0.2s linear;
+}
+
+.clientBtn {
+  position: relative;
+  color: #fff;
+  border: 2px solid;
+  border-image: linear-gradient(
+    54deg,
+    rgba(237, 9, 121, 0.996078431372549) 0%,
+    #23f1e7 0%,
+    #0075f1 100%
+  );
+  border-image-slice: 1;
+  background-color: transparent;
+  font-size: 1.6rem;
+  margin-top: -5rem;
+  padding: 1rem;
+  width: 22rem;
+  cursor: pointer;
+}
+
+.clientBtn:hover .fa-long-arrow-right {
+  right: -1.6rem;
+  top: 15%;
+}
+
+.clientBtn:hover {
+  color: #14f1ef;
+}
+
+#service {
+  margin: 4rem 0;
+}
+
+/* *****Brand Section ********** */
+
+.brand .clockImg {
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: end;
+}
+
+/* ************ table Section ************ */
+
+.tableTxt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  min-height: 100vh;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.tableTxt h1 {
+  color: #14f1ef;
+  font-size: 7vw;
+  text-align: end;
+  font-family: Play Fair Display;
+  padding-right: 6rem;
+}
+
+.tableTxt .border-left {
+  width: 60vw;
+  margin-bottom: 6rem;
+}
+
+table p {
+  font-size: 1.5rem;
+}
+
+.table {
+  border: 1px solid #fff;
+  border-left: transparent;
+  border-right: transparent;
+  margin-top: 3rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem;
+  border: 1px solid #fff;
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.top h2 {
+  font-size: 2rem;
+  /* width: 100%; */
+  font-weight: 100;
+}
+
+.top div {
+  position: relative;
+  width: 100%;
+  /* border-left: 2px solid #fff; */
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top .border::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 26vh;
+  background-color: #fff;
+  transform-origin: bottom;
+  /* right: -7px; */
+  right: -0.3vw;
+  z-index: -1;
+  transform: translateY(-2rem);
+}
+
+
+
+.top p {
+  font-size: 1.2rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10;
+}
+
+.bottom h3 {
+  display: inline-block;
+}
+
+.bottom-logo {
+  width: 45vw;
+  height: 50rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #fff;
+}
+
+.bottom-right h4 {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  color: #160f29;
+  margin-bottom: 2rem;
+  background: #14f1ef;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+}
+
+.flex2 h3 {
+  font-size: 2rem;
+}
+
+.bottomDiv {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex2 img,
+.flex2 h3,
+.flex2 span {
+  margin-right: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+.flex2 span {
+  font-size: 1.5rem;
+}
+
+.bottomDiv p {
+  font-size: 1.2rem;
+}
+
+.bottomDiv {
+  border-bottom: 1px solid #fff;
+  margin-left: 2rem;
+}
+
+.bottomDiv:last-child {
+  border-bottom: transparent;
+}
+
+/* ********* MileStone Section ************ */
+
+.mileStone {
+  min-height: 100vh;
+  padding: 1rem 0;
+  padding-left: 10rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.mileStone h1 {
+  color: #14f1ef;
+  font-family: Play Fair Display;
+  font-size: 7vw;
+}
+
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 25vh;
+  left: 32vw;
+  width: 30vw;
+  font-size: 1vw;
+}
+
+.history {
+  display: flex;
+  margin-top: 10rem;
+  padding: 2rem;
+}
+
+.history h2 {
+  font-size: 3.2rem;
+  font-family: Play Fair Display;
+}
+
+.history p {
+  font-size: 1.6rem;
+}
+
+.history .historyDiv {
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.historyDiv:nth-child(1) {
+  margin-top: 15rem;
+}
+
+.historyDiv:nth-child(2) {
+  margin-top: 7.5rem;
+}
+
+.mileStone .button .serviceBtn {
+  width: 30rem;
+}
+
+/*  ************* Company section *************** */
+
+.company {
+  min-height: 100vh;
+}
+
+.company h1 {
+  text-align: center;
+  color: #14f1ef;
+  font-family: Play Fair Display;
+  font-size: 6vw;
+}
+
+.company p {
+  font-size: 1.4rem;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+.company .img {
+  text-align: center;
+}
+
+.companyLogo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+
+.companyLogo img {
+  border: 1px solid #fff;
+  border-radius: 1.2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  height: 8rem;
+  width: 16rem;
+}
+
+.companyLogo .comImg {
+  margin: 3rem 0;
+}
+
+.companyLogo .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comImg {
+  flex: 1 1 30rem;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+/* *********** Footer section************** */
+
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(43, 15, 68);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1.5rem 1rem;
+  padding-left: 9rem;
+}
+
+footer div {
+  font-size: 2rem;
+  margin-right: 1rem;
+  flex: 1 1 30rem;
+  margin-top: 1.5rem;
+}
+
+footer ul {
+  padding: 1rem;
+}
+
+footer div:nth-child(1) ul li {
+  margin-bottom: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.blue {
+  color: #14f1ef;
+}
+
+/* ***********Media Queries************* */
+
+@media (max-width: 472px) {
+  .nav li {
+    padding: 0.5rem;
+  }
+
+  .aquaTxt {
+    bottom: 3rem !important;
+  }
+
+  .company h1 {
+    font-size: 8vw;
+  }
+
+  .right {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .about p {
+    font-size: 1.5rem;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .about {
+    padding: 1rem 4rem;
+  }
+  .redTxt h1 {
+    font-size: 6vw;
+  }
+
+  .aquaTxt h3 {
+    font-size: 2.4vw;
+    align-self: unset;
+  }
+  .right ul::before {
+    height: 65%;
+  }
+  .serviceList::before {
+    left: -1.7rem;
+    width: 15px;
+    height: 15px;
+  }
+  .serviceBtn .fa {
+    top: 15%;
+    right: 0rem;
+    font-size: 2rem;
+  }
+  .serviceBtn {
+    width: 17rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  .inner {
+    padding: 0 20% !important;
+  }
+  .mileStone .outer h1 {
+    font-size: 5rem !important;
+  }
+
+  .aquaTxt {
+    bottom: 4vw;
+    left: 4vw;
+  }
+
+  .nav {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #160f29;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .hamburgerBar {
+    display: block;
+  }
+
+  .nav.hidden {
+    visibility: hidden;
+  }
+
+  .logo {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 3.2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background: transparent;
+    color: #fff;
+  }
+
+  .about h2 {
+    font-size: 4vw !important;
+  }
+}
+
+@media (max-width: 726px) {
+  .aquaTxt {
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 719px) {
+  footer div {
+    text-align: center;
+  }
+
+  footer {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .top {
+    flex-direction: column;
+  }
+ 
+  .top .border::after{
+    display: none;
+  }
+
+  .top div{
+    border: 1px solid #fff;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom-logo {
+    height: 20vh;
+    width: 100%;
+    border-right: transparent;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.2rem;
+  }
+
+  .table{
+    border: 1px solid #fff !important;
+  }
+}
+
+@media (max-width: 1063px) {
+  .about {
+    padding: 1rem 10rem;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .laptopImg {
+    width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 1.3rem;
+  }
+  .right {
+    width: 40vw;
+    margin: 1rem auto;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .workLeft h1 {
+    font-size: 6rem;
+  }
+
+  .workLeft {
+    padding-left: 3rem;
+    width: 50vw;
+  }
+
+  .work .workLeft .border-left {
+    width: auto;
+  }
+  .clockImg {
+    margin-top: 1rem;
+    width: 54vw;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .partner h2 {
+    font-size: 2.3rem;
+  }
+
+  .button {
+    padding: 0;
+    margin: 6rem 0;
+  }
+
+  .mileStone {
+    padding-left: 0;
+    padding: 0rem 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .history {
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+
+  .historyDiv:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .historyDiv:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .mileStone .outer h1 {
+    font-size: 6rem;
+  }
+
+  .inner {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25%;
+  }
+
+  .outer h1 {
+    text-align: center;
+  }
+
+  .history .historyDiv {
+    margin-right: 0rem;
+  }
+
+  .history .historyDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .inner {
+    top: 30vh;
+    left: 1vw;
+  }
+}
+
+@media (max-width: 1182px) {
+  .workLeft h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 668px) and (min-width: 576px) {
+  .company h1 {
+    font-size: 8vw;
+  }
+  .aquaTxt {
+    bottom: 9rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .workLeft {
+    width: 70vw;
+    margin: 1rem auto;
+  }
+  .clockImg {
+    width: 60vw;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 370px) {
+  .work .workLeft h1 {
+    font-size: 5rem;
+  }
+  .about h2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about {
+    padding: 1rem 4rem;
+  }
+  .tableTxt h1 {
+    font-size: 9vw;
+  }
+
+  .aquaTxt {
+    bottom: 2vw !important;
+  }
+}
+
+@media (max-width: 347px) {
+  .inner {
+    top: 38vh;
+  }
+  .nav li {
+    padding: 0.3rem;
+    font-size: 1.6rem;
+  }
+}
